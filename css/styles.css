@@ -73,7 +73,7 @@ body {
 }
 
 .jumbo-slider__link--active {
-    color: #03fc7f;
+    color: black;
 }
 
 .jumbo-slider__ellipsis {
@@ -92,11 +92,11 @@ body {
 .jumbo-slider__circle {
     width: 20px;
     height: 20px;
-    border: 2px solid #03fc7f;
+    border: 2px solid black;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .jumbo-slider__circle--filled {
-    background: #03fc7f;
+    background: black;
 }
