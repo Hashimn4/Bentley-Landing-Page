@@ -38,6 +38,11 @@ body {
     color: white;
     text-decoration: none;
     padding: 0 10px;
+    transition: all .3s ease-in-out; 
+}
+
+.page-header__nav a:hover {
+    color: #03fc7f;
 }
 
 .jumbo-slider {
