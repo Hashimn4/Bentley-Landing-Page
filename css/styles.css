@@ -15,7 +15,7 @@ body {
     color: white;
     z-index: 10;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     background-color: black;
 }
 
@@ -30,11 +30,12 @@ body {
     width: 100%;
     background: #1b1b1b;
     overflow: hidden;
+    position: relative;
 }
 
 .jumbo-slider__container {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container {
@@ -46,14 +47,15 @@ body {
 
 .jumbo-slider__slide {
     width: 100%;
+    /* position: relative; */
     height: 100vh;
-    
+    background: #1b1b1b;
 }
 
 .jumbo-slider__slide-bg {
     background-size: cover !important;
     background-position: center !important;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     opacity: 0;
     cursor: pointer;
@@ -146,7 +148,7 @@ body {
 }
 
 .jumbo-slider__link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: white;
     text-transform: uppercase;
     padding: 20px;
@@ -180,4 +182,23 @@ body {
 
 .jumbo-slider__circle--filled {
     background: black;
+}
+
+.jumbo-slider__timeline {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.jumbo-slider__line {
+    height: 5px;
+    width: 0;
+    background-color:white;
+    transition: width 6s ease-in-out;
+}
+
+.jumbo-slider__slide--active .jumbo-slider__line {
+    width: 100%;
+    background-color: #03fc7f;
 }
