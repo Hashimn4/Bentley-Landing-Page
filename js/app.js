@@ -14,7 +14,6 @@ function f() {
         for(let i = 0; i < slides.length; ++i) {
             links[i].classList.remove("jumbo-slider__link--active");
             circles[i].classList.remove("jumbo-slider__circle--filled");
-
         }
         links[current-1].classList.add("jumbo-slider__link--active");
         circles[current-1].classList.add("jumbo-slider__circle--filled");
